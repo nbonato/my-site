@@ -1,13 +1,139 @@
-<!DOCTYPE html>
-<html>
+<style>
+/*http://cosketch.com/Rooms/qppaxcg*/
+/*https://www.w3schools.com/css/tryit.asp?filename=trycss_css_image_overlay_opacity*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f3f3f3;
+}
+
+
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 19px 18px;
+    text-decoration: none;
+}
+#home {
+  float:left;
+  font-weight: bold;
+  background-color: #4CAF50;
+}
+
+
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #888;
+    color:white;
+}
+
+div.main-gallery {
+  margin: 0px;
+}
+
+div.gallery {
+    margin:0px;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+div.gallery {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+div.gallery img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+
+div.gallery img.portrait {
+  width: 100%;
+  height: auto;
+}
+</style>
+
+
+<html> <!-- ujnndkajsnd-->
   <head>
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>8-bit website</title>
+    <title>Le ricette di Yelfign</title>
   </head>
 
   <body>
-    The content ofafshjkglhòjàkjhgfdsasdff the document......
+    <ul>
+      <li id="home"><a href="default.asp">Home</a></li>
+      <li><a href="chisono.htm">Chi sono</a></li>
+      <li><a href="contatti.htm">Contatti</a></li>
+      <li><a href="indicericette.htm">Indice ricette</a></li>
+      
+      
+    </ul>
+    <div class="main-gallery">
+      <div class="gallery">
+          <a href="">
+            <img src="https://lh4.googleusercontent.com/AHhjbcWUeH-_lU2zqJt2gID-Y7Q0Qt0ET6NYSE1mzvuC1UB7Lflq0bGdcO61O2E7Cn3s3HvNRb49yHA=w1366-h662-rw" width="300" height="200">
+          </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+
+      
+      <div class="gallery">
+        <a href="">
+          <img src="https://lh5.googleusercontent.com/Sq556TSgixI7NPewDCci-4UAON29CKdWb6YienbvLdD5TcDLZtBiVCr51wMHXRSngsu9myHwnbZjyyA=w1366-h662-rw" class="portrait" width="300" height="200">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+
+      
+      <div class="gallery">
+        <a href="">
+          <img src="http://ichef-1.bbci.co.uk/news/660/cpsprodpb/1325A/production/_88762487_junk_food.jpg" alt="" width="300" height="200">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      
+      
+      <div class="gallery">
+        <a href="">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/1200px-Good_Food_Display_-_NCI_Visuals_Online.jpg" alt="" width="300" height="200">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
   </body>
 
 </html>
